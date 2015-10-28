@@ -3,6 +3,7 @@ package com.katmoo.mrt;
 import com.katmoo.mrt.handler.ConfigHandler;
 import com.katmoo.mrt.proxy.IProxy;
 import com.katmoo.mrt.ref.RefStr;
+import com.katmoo.mrt.util.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -23,15 +24,19 @@ public class ModdingResourceTest {
     public void preInit(FMLPreInitializationEvent event) {
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
+
+        LogHelper.info("Pre Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
 
+        LogHelper.info("Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
 
+        LogHelper.info("Post Initialization Complete!");
     }
 }
