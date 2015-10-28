@@ -1,0 +1,21 @@
+[
+  {
+    "modid": "MRT",
+    "name": "Modding Resource Test",
+    "description": "Where mod ideas go to die.",
+    "version": "1.0",
+    "mcversion": "1.7.10",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "katmoo"
+    ],
+    "credits": "Pahimar and MineMaarten for supplying me with the tutorials I needed to get started.",
+    "logoFile": "",
+    "screenshots": [
+    ],
+    "parent": "",
+    "dependencies": [
+    ]
+  }
+]
