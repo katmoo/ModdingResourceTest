@@ -1,2 +1,5 @@
 # Items
 item.mrt:cardboard.name=Cardboard
+
+# Blocks
+tile.mrt:cardboardCube.name=Block of Cardboard

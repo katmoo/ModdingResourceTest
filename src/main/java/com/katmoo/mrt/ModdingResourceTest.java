@@ -1,6 +1,7 @@
 package com.katmoo.mrt;
 
 import com.katmoo.mrt.handler.ConfigHandler;
+import com.katmoo.mrt.init.ModBlocks;
 import com.katmoo.mrt.init.ModItems;
 import com.katmoo.mrt.proxy.IProxy;
 import com.katmoo.mrt.ref.RefStr;
@@ -25,7 +26,9 @@ public class ModdingResourceTest {
     public void preInit(FMLPreInitializationEvent event) {
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
+
         ModItems.init();
+        ModBlocks.init();
 
         LogHelper.info("Pre Initialization Complete!");
     }
