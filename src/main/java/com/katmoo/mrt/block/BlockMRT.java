@@ -1,5 +1,6 @@
 package com.katmoo.mrt.block;
 
+import com.katmoo.mrt.creativetab.CreativeTabMRT;
 import com.katmoo.mrt.ref.RefStr;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,6 +17,7 @@ public class BlockMRT extends Block {
 
     public BlockMRT(Material material) {
         super(material);
+        this.setCreativeTab(CreativeTabMRT.MRT_TAB);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.katmoo.mrt.item;
 
+import com.katmoo.mrt.creativetab.CreativeTabMRT;
 import com.katmoo.mrt.ref.RefStr;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -10,6 +11,7 @@ import net.minecraft.item.ItemStack;
 public class ItemMRT extends Item {
     public ItemMRT() {
         super();
+        this.setCreativeTab(CreativeTabMRT.MRT_TAB);
     }
 
     @Override
