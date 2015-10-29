@@ -1,3 +1,7 @@
+# Config
+general.cardboardCubeFlammable.label=Cardboard Block Flammability
+general.cardboardCubeFlammable.comment=Sets whether or not the Block of Cardboard is flammable.
+
 # Items
 item.mrt:cardboard.name=Cardboard
 
