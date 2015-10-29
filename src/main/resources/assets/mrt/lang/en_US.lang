@@ -4,6 +4,7 @@ general.cardboardCubeFlammable.comment=Sets whether or not the Block of Cardboar
 
 # Items
 item.mrt:cardboard.name=Cardboard
+item.mrt:cardboardTube.name=Cardboard Tube
 
 # Blocks
 tile.mrt:cardboardCube.name=Block of Cardboard
