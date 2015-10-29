@@ -3,3 +3,6 @@ item.mrt:cardboard.name=Cardboard
 
 # Blocks
 tile.mrt:cardboardCube.name=Block of Cardboard
+
+# Creative Tabs
+itemGroup.mrt=MRT Tab

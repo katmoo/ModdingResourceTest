@@ -6,15 +6,10 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class CreativeTabMRT {
-    public static CreativeTabs MRT_TAB = new CreativeTabs(RefStr.MOD_ID) {
+    public static CreativeTabs MRT_TAB = new CreativeTabs(RefStr.MOD_ID.toLowerCase()) {
         @Override
         public Item getTabIconItem() {
             return ModItems.cardboard;
-        }
-
-        @Override
-        public String getTranslatedTabLabel() {
-            return "Modding Resource Test";
         }
     };
 }
