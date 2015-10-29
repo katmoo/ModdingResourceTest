@@ -1,5 +1,6 @@
 package com.katmoo.mrt.block;
 
+import com.katmoo.mrt.creativetab.CreativeTabMRT;
 import net.minecraft.block.material.Material;
 
 public class BlockCardboard extends BlockMRT {
@@ -10,5 +11,6 @@ public class BlockCardboard extends BlockMRT {
         this.setStepSound(soundTypeCloth);
         this.setFlammable(true);
         this.setFlammability(50);
+        this.setCreativeTab(CreativeTabMRT.MRT_TAB);
     }
 }
