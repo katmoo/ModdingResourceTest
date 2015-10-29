@@ -3,6 +3,7 @@ package com.katmoo.mrt;
 import com.katmoo.mrt.handler.ConfigHandler;
 import com.katmoo.mrt.init.ModBlocks;
 import com.katmoo.mrt.init.ModItems;
+import com.katmoo.mrt.init.Recipes;
 import com.katmoo.mrt.proxy.IProxy;
 import com.katmoo.mrt.ref.RefStr;
 import com.katmoo.mrt.util.LogHelper;
@@ -35,6 +36,7 @@ public class ModdingResourceTest {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        Recipes.init();
 
         LogHelper.info("Initialization Complete!");
     }
