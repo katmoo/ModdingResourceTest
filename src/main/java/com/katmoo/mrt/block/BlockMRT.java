@@ -12,8 +12,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
 public class BlockMRT extends Block {
-    protected boolean flammable;
+    protected boolean flammable = false;
     protected int flammability = 1;
+    protected boolean opaque = true;
 
     public BlockMRT(Material material) {
         super(material);
@@ -35,6 +36,7 @@ public class BlockMRT extends Block {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
+    //Block Flammability
     public BlockMRT setFlammable(boolean flammable) {
         this.flammable = flammable;
         return this;
@@ -63,5 +65,21 @@ public class BlockMRT extends Block {
     @Override
     public boolean isFireSource(World world, int x, int y, int z, ForgeDirection side) {
         return flammable && flammability == 0;
+    }
+
+    //Block Opaqueness
+    public BlockMRT setOpaque(boolean opaque) {
+        this.opaque = opaque;
+        return this;
+    }
+
+    @Override
+    public boolean isOpaqueCube() {
+        return opaque;
+    }
+
+    @Override
+    public boolean shouldSideBeRendered(IBlockAccess world, int x, int y, int z, int side) {
+        return side == 0 || !world.getBlock(x, y, z).isOpaqueCube();
     }
 }
